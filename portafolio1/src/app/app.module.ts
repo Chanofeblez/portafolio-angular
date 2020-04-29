@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { AbajoComponent } from './shared/abajo/abajo.component';
 import { ArribaComponent } from './shared/arriba/arriba.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ItemComponent } from './pages/item/item.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
+
 
 
 @NgModule({
@@ -13,11 +18,15 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
     AppComponent,
     AbajoComponent,
     ArribaComponent,
-    PortafolioComponent  
+    PortafolioComponent,
+    AboutComponent,
+    ItemComponent,
+    SearchComponent  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

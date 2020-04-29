@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-abajo',
@@ -9,7 +10,7 @@ export class AbajoComponent implements OnInit {
 
   year: number = new Date().getFullYear();
 
-  constructor() { }
+  constructor(public infoServicio: InfoPaginaService) { }
 
   ngOnInit(): void {
   }
